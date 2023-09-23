@@ -1,7 +1,8 @@
 {
-  "name": "Manuel",
-  "lastName": "Munoz",
-  "gender": "Man",
+  "name": "Santiago",
+  "lastName": "Caicedo",
   "country": "Colombia",
-  "city": "Bogota"
+  "city": "Palmira",
+  "email": "santi@hotmail.com",
+  "phone": "1-662-621-0483 x77346"
 }

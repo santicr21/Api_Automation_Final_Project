@@ -2,6 +2,7 @@ package com.testing.api.utils;
 
 import com.google.gson.Gson;
 import com.testing.api.models.Client;
+import com.testing.api.models.Resource;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -24,5 +25,15 @@ public class JsonFileReader {
             e.printStackTrace();
         }
         return client;
+    }
+    public Resource getResourceByJson(String jsonFileName) {
+        Resource resource = new Resource();
+        try (Reader reader = new FileReader(jsonFileName)) {
+            Gson gson = new Gson();
+            resource = gson.fromJson(reader, Resource.class);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return resource;
     }
 }

@@ -39,10 +39,6 @@ public class ClientRequest extends BaseRequest {
         return requestDelete(endpoint, createBaseHeaders());
     }
 
-    public Client getClientEntity(@NotNull Response response) {
-        return response.as(Client.class);
-    }
-
     public List<Client> getClientsEntity(@NotNull Response response) {
         JsonPath jsonPath = response.jsonPath();
         return jsonPath.getList("", Client.class);
@@ -56,6 +52,10 @@ public class ClientRequest extends BaseRequest {
     public Client getClientEntity(String clientJson) {
         Gson gson = new Gson();
         return gson.fromJson(clientJson, Client.class);
+    }
+
+    public Client getClientEntity(@NotNull Response response) {
+        return response.as(Client.class);
     }
 
     public boolean validateSchema(Response response, String schemaPath) {

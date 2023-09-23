@@ -1,0 +1,9 @@
+{
+  "name": "Nuevo nombre",
+  "trademark": "Nuevo trademark",
+  "stock": 70000,
+  "price": 32423.07,
+  "description": "Descripcion muy corta",
+  "tags": " nuevo status",
+  "is_active": false
+}
