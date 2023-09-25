@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue = "com.testing.api.stepDefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         monochrome = true,
-        tags = "@smokeTest",
+        tags = "@smoke",
         //dryRun = true,
         plugin = {"pretty:target/cucumber/cucumber.txt",
                   "html:target/cucumber/report",
